@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Groceries</title>
+    <link rel="stylesheet" href="style3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+   
+</head>
+<body>
+    
+ <div class="Navbar">
+    <img src="logo.png">
+<h1> Groceries</h1>
+<div class="search-container">
+    <input type="text" id="myinput" placeholder="Search..." class="search-input"onkeyup="searchFun()">
+    <button class="search-btn">
+        <i class="fa-solid fa-magnifying-glass"></i>
+    </button>
+</div>
+<a href="indexlist.html" class="button">List Your Shop</a>
+ </div>
+ <div id="cities">
+    <div class="dropdown">
+        <button class="dropbtn">Bangalore <i class="fas fa-chevron-down"></i></button>
+        <div class="dropdown-content">
+            <span class="dropdown-title">Popular Localities</span>
+            <a href="#">Whitefield</a>
+            <a href="#">Koramangala</a>
+            <a href="#">MG Road</a>
+            <a href="#">Indiranagar</a>
+            <a href="#">Electronic City</a>
+            <a href="#" class="all-locations">All of Bangalore <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <button class="dropbtn">Mumbai <i class="fas fa-chevron-down"></i></button>
+        <div class="dropdown-content">
+            <span class="dropdown-title">Popular Localities</span>
+            <a href="#">Bandra</a>
+            <a href="#">Juhu</a>
+            <a href="#">Andheri</a>
+            <a href="#">Colaba</a>
+            <a href="#">Borivali</a>
+            <a href="#" class="all-locations">All of Mumbai <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <button class="dropbtn">Delhi <i class="fas fa-chevron-down"></i></button>
+        <div class="dropdown-content">
+            <span class="dropdown-title">Popular Localities</span>
+            <a href="#">Paharganj</a>
+            <a href="#">Karol Bagh</a>
+            <a href="#">Janakpuri</a>
+            <a href="#">Dwarka</a>
+            <a href="#">Rohini</a>
+            <a href="#" class="all-locations">All of Delhi <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </div>
+
+    <!-- New cities added below -->
+
+    <div class="dropdown">
+        <button class="dropbtn">Ahmedabad <i class="fas fa-chevron-down"></i></button>
+        <div class="dropdown-content">
+            <span class="dropdown-title">Popular Localities</span>
+            <a href="#">Navrangpura</a>
+            <a href="#">Satellite</a>
+            <a href="#">Bopal</a>
+            <a href="#">Gandhinagar</a>
+            <a href="#" class="all-locations">All of Ahmedabad <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <button class="dropbtn">Chandigarh <i class="fas fa-chevron-down"></i></button>
+        <div class="dropdown-content">
+            <span class="dropdown-title">Popular Localities</span>
+            <a href="#">Sector 17</a>
+            <a href="#">Sector 22</a>
+            <a href="#">Panchkula</a>
+            <a href="#">Mohali</a>
+            <a href="#" class="all-locations">All of Chandigarh <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <button class="dropbtn">Jaipur <i class="fas fa-chevron-down"></i></button>
+        <div class="dropdown-content">
+            <span class="dropdown-title">Popular Localities</span>
+            <a href="#">Malviya Nagar</a>
+            <a href="#">Vaishali Nagar</a>
+            <a href="#">C-Scheme</a>
+            <a href="#">Bapu Nagar</a>
+            <a href="#" class="all-locations">All of Jaipur <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <button class="dropbtn">Lucknow <i class="fas fa-chevron-down"></i></button>
+        <div class="dropdown-content">
+            <span class="dropdown-title">Popular Localities</span>
+            <a href="#">Hazratganj</a>
+            <a href="#">Gomti Nagar</a>
+            <a href="#">Alambagh</a>
+            <a href="#">Indira Nagar</a>
+            <a href="#" class="all-locations">All of Lucknow <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <button class="dropbtn">Kochi <i class="fas fa-chevron-down"></i></button>
+        <div class="dropdown-content">
+            <span class="dropdown-title">Popular Localities</span>
+            <a href="#">Fort Kochi</a>
+            <a href="#">Kakkanad</a>
+            <a href="#">Edappally</a>
+            <a href="#">Aluva</a>
+            <a href="#" class="all-locations">All of Kochi <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </div>
+</div>
+
+
+
+<div id="houses2">
+    <!-- Text About Homes & Hotels -->
+    <div class="text1-content">
+        <h2>Have You Ever feel which shop gives you <span class="help">quality</span>  products</h2>
+        <p>Explore grocery stores with high customer ratings right in your area and Buy<br> Quality Groceries with Confidence</p>
+    </div>
+    <img id="pdimg2" src="hero image.jpg">
+</div>
+<h2 id="Satna">We are available in </h2>
+<div class="scrolling-container">
+    <div class="scrolling-content">
+      <h1 class="scrolling-heading">Satna</h1>
+      <h1 class="scrolling-heading">Rewa</h1> <!-- Duplicate for seamless effect -->
+       <h1 class="scrolling-heading">Jabalpur</h1>
+       <h1 class="scrolling-heading">Katni</h1>
+       <h1 class="scrolling-heading">Singruali</h1>
+       <h1 class="scrolling-heading">Amritsar</h1>
+      <h1 class="scrolling-heading">Dhanbad</h1>
+      <h1 class="scrolling-heading">Jalandhar</h1>
+      <h1 class="scrolling-heading">Asansol</h1>
+      <h1 class="scrolling-heading">Kakinada</h1>
+      <h1 class="scrolling-heading">Kharagpur</h1>
+      <h1 class="scrolling-heading">Gorakhpur</h1>
+      <h1 class="scrolling-heading">Udaipur</h1>
+      <h1 class="scrolling-heading">Raipur</h1>
+      <h1 class="scrolling-heading">Warangal</h1>
+      <h1 class="scrolling-heading">Jammu</h1>
+      <h1 class="scrolling-heading">Shimla</h1>
+      <h1 class="scrolling-heading">Rourkela</h1>
+      <h1 class="scrolling-heading">Silchar</h1>
+      <h1 class="scrolling-heading">Surat</h1>
+      <h1 class="scrolling-heading">Jaipur</h1>
+      <h1 class="scrolling-heading">Lucknow</h1>
+      <h1 class="scrolling-heading">Kanpur</h1>
+      <h1 class="scrolling-heading">Nagpur</h1>
+      <h1 class="scrolling-heading">Indore</h1>
+      <h1 class="scrolling-heading">Patna</h1>
+      <h1 class="scrolling-heading">Vadodara</h1>
+      <h1 class="scrolling-heading">Bhopal</h1>
+      <h1 class="scrolling-heading">Coimbatore</h1>
+      <h1 class="scrolling-heading">Chandigarh</h1>
+      <h1 class="scrolling-heading">Mysuru</h1>
+      <h1 class="scrolling-heading">Vijayawada</h1>
+      <h1 class="scrolling-heading">Aurangabad</h1>
+    </div>
+  </div>
+<div class="container">
+    <div class="grid">
+      <div class="item">
+        <img src="newimg1.jpg" alt="Picture 1">
+        <div class="details">
+          <h2>Ram General Store</h2>
+          <p>Circuit House </p>
+        
+  <div class="star-rating-container">
+    <div class="star-rating" data-id="1">
+      <span class="star" data-rating="1">&#9733;</span>
+      <span class="star" data-rating="2">&#9733;</span>
+      <span class="star" data-rating="3">&#9733;</span>
+      <span class="star" data-rating="4">&#9733;</span>
+      <span class="star" data-rating="5">&#9733;</span>
+    </div>
+    <p id="ratingValue-1">Rating: 0</p>
+  </div>
+
+        </div>
+      </div>
+      <div class="item">
+        <img  id="image2"src="newimg2.jpg" alt="Picture 2">
+        <div class="details">
+          <h2>Shyam General Stores</h2>
+          <p>Pateri</p>
+          
+  <div class="star-rating-container">
+    <div class="star-rating" data-id="2">
+      <span class="star" data-rating="1">&#9733;</span>
+      <span class="star" data-rating="2">&#9733;</span>
+      <span class="star" data-rating="3">&#9733;</span>
+      <span class="star" data-rating="4">&#9733;</span>
+      <span class="star" data-rating="5">&#9733;</span>
+    </div>
+    <p id="ratingValue-2">Rating: 0</p>
+  </div>
+        </div>
+      </div>
+      <div class="item">
+        <img id="image2"src="newimg3.jpg" alt="Picture 3">
+        <div class="details">
+          <h2>Pritam Grocery Store</h2>
+          <p>Civil Line</p>
+           
+  <div class="star-rating-container">
+    <div class="star-rating" data-id="1">
+      <span class="star" data-rating="1">&#9733;</span>
+      <span class="star" data-rating="2">&#9733;</span>
+      <span class="star" data-rating="3">&#9733;</span>
+      <span class="star" data-rating="4">&#9733;</span>
+      <span class="star" data-rating="5">&#9733;</span>
+    </div>
+    <p id="ratingValue-1">Rating: 0</p>
+  </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="container">
+    <div class="grid">
+      <div class="item">
+        <img src="newimg4.jpg" alt="Picture 1">
+        <div class="details">
+          <h2>Raju grocery and Stationaries</h2>
+          <p>Katni</p>
+          
+  <div class="star-rating-container">
+    <div class="star-rating" data-id="1">
+      <span class="star" data-rating="1">&#9733;</span>
+      <span class="star" data-rating="2">&#9733;</span>
+      <span class="star" data-rating="3">&#9733;</span>
+      <span class="star" data-rating="4">&#9733;</span>
+      <span class="star" data-rating="5">&#9733;</span>
+    </div>
+    <p id="ratingValue-1">Rating: 0</p>
+  </div>
+        </div>
+      </div>
+      <div class="item">
+        <img src="newimg5.jpg" alt="Picture 2">
+        <div class="details">
+          <h2>Prabhat General Stores</h2>
+          <p>Satna</p>
+          
+  <div class="star-rating-container">
+    <div class="star-rating" data-id="1">
+      <span class="star" data-rating="1">&#9733;</span>
+      <span class="star" data-rating="2">&#9733;</span>
+      <span class="star" data-rating="3">&#9733;</span>
+      <span class="star" data-rating="4">&#9733;</span>
+      <span class="star" data-rating="5">&#9733;</span>
+    </div>
+    <p id="ratingValue-1">Rating: 0</p>
+  </div>
+        </div>
+      </div>
+      <div class="item">
+        <img src="newimg6.jpg" alt="Picture 3">
+        <div class="details">
+          <h2>Pramod Groceries</h2>
+          <p>Jabalpur</p>
+           
+  <div class="star-rating-container">
+    <div class="star-rating" data-id="1">
+      <span class="star" data-rating="1">&#9733;</span>
+      <span class="star" data-rating="2">&#9733;</span>
+      <span class="star" data-rating="3">&#9733;</span>
+      <span class="star" data-rating="4">&#9733;</span>
+      <span class="star" data-rating="5">&#9733;</span>
+    </div>
+    <p id="ratingValue-1">Rating: 0</p>
+  </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+<div class="container">
+    <div class="grid">
+      <div class="item">
+        <img src="newimg7.jpg" alt="Picture 1">
+        <div class="details">
+          <h2>Prakash Store</h2>
+          <p>Rewa</p>
+         
+  <div class="star-rating-container">
+    <div class="star-rating" data-id="1">
+      <span class="star" data-rating="1">&#9733;</span>
+      <span class="star" data-rating="2">&#9733;</span>
+      <span class="star" data-rating="3">&#9733;</span>
+      <span class="star" data-rating="4">&#9733;</span>
+      <span class="star" data-rating="5">&#9733;</span>
+    </div>
+    <p id="ratingValue-1">Rating: 0</p>
+  </div>
+        </div>
+      </div>
+      <div class="item">
+        <img src="newimg8.jpg" alt="Picture 2">
+        <div class="details">
+          <h2>Ram Prakash General store</h2>
+          <p>Chitakoot</p>
+           
+  <div class="star-rating-container">
+    <div class="star-rating" data-id="1">
+      <span class="star" data-rating="1">&#9733;</span>
+      <span class="star" data-rating="2">&#9733;</span>
+      <span class="star" data-rating="3">&#9733;</span>
+      <span class="star" data-rating="4">&#9733;</span>
+      <span class="star" data-rating="5">&#9733;</span>
+    </div>
+    <p id="ratingValue-1">Rating: 0</p>
+  </div>
+        </div>
+      </div>
+      <div class="item">
+        <img src="newimg9.jpg" alt="Picture 3">
+        <div class="details">
+          <h2>Pappu Vegetables</h2>
+          <p>Rampur</p>
+           
+  <div class="star-rating-container">
+    <div class="star-rating" data-id="1">
+      <span class="star" data-rating="1">&#9733;</span>
+      <span class="star" data-rating="2">&#9733;</span>
+      <span class="star" data-rating="3">&#9733;</span>
+      <span class="star" data-rating="4">&#9733;</span>
+      <span class="star" data-rating="5">&#9733;</span>
+    </div>
+    <p id="ratingValue-1">Rating: 0</p>
+  </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+<footer>
+    <div class="footer-container">
+        <!-- Information Section -->
+        <div class="footer-info">
+            <h3>About Us</h3>
+            <p>Welcome to our accommodation platform, where we connect you with top-rated homes, hostels, grocery stores, and furniture suppliers. Enjoy a seamless experience with services tailored to your needs.</p>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="footer-contacts">
+            <h3>Contact Us</h3>
+            <ul>
+                <li>Email: <a href="mailto:support@example.com">support@example.com</a></li>
+                <li>Phone: <a href="tel:+1234567890">+123-456-7890</a></li>
+                <li>Address: 1234 Accommodation St, City, Country</li>
+            </ul>
+        </div>
+
+        <!-- Services Section -->
+        <div class="footer-services">
+            <h3>Our Services</h3>
+            <ul>
+                <li><a href="#homes">Rental Homes</a></li>
+                <li><a href="#hostels">Top-Rated Hostels</a></li>
+                <li><a href="#groceries">Grocery Stores</a></li>
+                <li><a href="#furniture">Furniture Suppliers</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+        <p>&copy; 2024 Accommodation Platform. All rights reserved.</p>
+    </div>
+</footer>
+<script src="first3.js"></script>
+</body>
+</html>

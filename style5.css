@@ -1,0 +1,384 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    overflow-x: hidden; 
+  }
+  
+  .Navbar {
+    color: black;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    background-color:rgb(255, 254, 254);
+    padding: 0 20px; /* Add padding for spacing */
+    position:sticky; 
+    width: 100%;
+    z-index: 1000;
+    top: 0px;
+  }
+  
+  .Navbar img{
+
+    height: 65px;
+  }
+  .Navbar h1 {
+    font-family: "SUSE", sans-serif;
+    font-weight: 500;
+    color: rgb(207, 201, 200);
+
+  }
+  .Navbar h2{
+    color:rgb(67, 65, 65);
+    margin-left: 140px;
+    font-weight: 400;
+    margin-top: 35px;
+  }
+  .search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px; /* Adjust as needed */
+    margin-left: 180px;
+  }
+  
+  .search-input {
+    width: 800px;
+    padding: 10px 20px;
+    border: 2px solid #ccc;
+    border-radius: 50px;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease;
+  }
+  
+  .search-input:focus {
+    border-color: #f80303;
+  }
+  
+  .search-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-left: -50px;
+    color: rgb(19, 133, 233);
+    
+  }
+  
+  .search-btn i {
+    font-size: 20px; /* Adjust size as needed */
+    color:#fc0202; /* Adjust color if needed */
+  }
+  
+  .button {
+    display: flex;
+    padding: 10px 20px;
+    background-color: #fb0505; /* Green background */
+    color: white; /* White text */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px;
+    transition: background-color 0.3s; /* Smooth background color transition */
+    margin-top: 10px;
+    margin-left: 140px;
+  }
+.help{
+  color: #fe040c;
+}
+  #cities {
+    display: flex;
+    justify-content: space-between;
+    background-color: #F3F5F7;  /* Light grey background */
+    padding: 5px 15px;  /* Slight padding reduction for compact look */
+    border-radius: 6px;
+    gap: 10px; /* Add some gap between buttons to prevent overlap */
+  position: relative;
+  width: 100%;
+  
+  }
+  
+  /* Dropdown Button Styling */
+  .dropbtn {
+    background-color: #F3F5F7;  /* Same as parent background for seamless look */
+    color: #333;
+    font-size: 14px;  /* Slightly smaller for a compact look */
+    padding: 8px 12px;  /* Reduced padding */
+    cursor: pointer;
+    border: none;  /* No border to avoid visible edges */
+    border-radius: 4px;
+    box-shadow: none;  /* Remove box shadow to keep it flat */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    line-height: 1.2;
+  }
+  
+  .dropbtn:hover {
+    background-color: white;  /* Hover effect for button */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);  /* Minimal shadow on hover */
+  }
+  
+  /* Dropdown Content Styling */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    width: 80%;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 220px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 8px 0;  /* Adjusted padding */
+    z-index: 1;
+    border-radius: 6px;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Dropdown Item Styling */
+  .dropdown-content a {
+    color: black;
+    padding: 6px 14px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #f5f5f5;
+  }
+  
+  .all-locations {
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .dropdown-title {
+    font-weight: bold;
+    color: #2b2a2a;
+    padding: 10px 16px;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 5px;
+  }
+  
+  /* For Chevron Animation */
+  .dropbtn i {
+    margin-left: 8px;
+    transition: transform 0.3s ease;
+  }
+  
+  .dropdown:hover .dropbtn i {
+    transform: rotate(180deg);  /* Chevron rotation animation */
+  }
+  
+
+  #houses2 {
+    height: auto; /* Let the content determine the height */
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    margin-top: 30px;
+    align-items: center; /* Center items vertically */
+  }
+
+  .text1-content {
+    color: black;
+    width: 60%; /* Adjust the width of the text area */
+    margin-left: 100px;
+  }
+  
+  .text1-content h2 {
+    font-size: 60px;
+    margin-bottom: 10px;
+    color: #5F6368;
+    font-weight: 600;
+  }
+  
+  #share {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #1a73eb;
+    font-weight: 600;
+  }
+  
+  #pdimg2 {
+    height: 450px;
+    width: 420; /* Example value, change as needed */
+    border-radius: 2%;
+    margin-right: 150px;
+    display: flex;
+  }
+  .text1-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #5F6368;
+  }
+  
+#Satna{
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #5F6368;
+    font-weight: 500;
+    margin-left: 680px;
+    margin-top: 60px;
+
+} 
+
+.scrolling-container {
+    overflow: hidden; /* Hides the overflow to keep the animation smooth */
+    background-color: #f0f0f0; /* Background color for better visibility */
+    padding: 10px 0;
+    position: relative; /* Ensure positioning context for animation */
+    margin-top: 20px;
+  }
+  
+  .scrolling-content {
+    display: flex; /* Align items in a row */
+    width: 200%; /* Ensures that the content is twice as wide as the container */
+    animation: scroll 15s linear infinite; /* Adjust duration and animation type */
+  }
+  
+  .scrolling-heading {
+    white-space: nowrap; /* Ensures that the text does not wrap */
+    font-size: 24px; /* Font size for the heading */
+    padding-right: 50px; /* Add some space between the duplicated headings */
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0); /* Start from the right edge of the container */
+    }
+    100% {
+      transform: translateX(-50%); /* Move to the left edge, which is 50% of the container’s width */
+    }
+  }
+   
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 20px;
+  }
+  
+  .item {
+    /* border: 1px solid #ddd; */
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+  }
+  .item img {
+    width: 100%; /* Adjust the percentage to scale the image to fit the container */
+    /* max-width: 300px;  */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 2%;
+  }
+  
+  #image2{
+    width: 100%;
+    height:320px ;
+  }
+  .details {
+    padding: 15px;
+  }
+  
+  .details h2 {
+    margin: 0;
+    font-size: 1.2em;
+  }
+  
+  .details p {
+    margin: 0;
+    color: #666;
+    margin-top: 5px;
+    font-size:1.2em ;
+  }
+
+  .star-rating-container {
+    margin-bottom: 20px;
+  }
+  
+  .star-rating {
+    display: inline-block;
+  }
+  
+  .star {
+    font-size: 35px;
+    color: lightgray;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .star.selected,
+  .star:hover,
+  .star:hover ~ .star {
+    color: gold;
+  }
+  
+  p {
+    font-size: 24px;
+    margin-top: 20px;
+  }
+  
+footer {
+    background-color: #f8f9fa;
+    padding: 20px;
+    color: #343a40;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-info, .footer-contacts, .footer-services {
+    width: 30%;
+  }
+  
+  .footer-info h3, .footer-contacts h3, .footer-services h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-info p, .footer-contacts ul, .footer-services ul {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  
+  .footer-contacts ul, .footer-services ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-contacts ul li, .footer-services ul li {
+    margin-bottom: 8px;
+  }
+  
+  .footer-contacts a, .footer-services a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .footer-contacts a:hover, .footer-services a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    padding: 10px;
+    background-color: #e9ecef;
+    margin-top: 20px;
+  }
+  

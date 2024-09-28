@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Your Shop</title>
+    <link rel="stylesheet" href="styleholist.css">
+</head>
+<body>
+
+    <h1>List Your Hostels or Rooms on CityBridge</h1>
+
+    <!-- Form to input shop details -->
+    <form id="shop-form">
+        <label for="shop-name">Hostel/Room:</label>
+        <input type="text" id="shop-name" required>
+
+        <label for="shop-address">Address:</label>
+        <input type="text" id="shop-address" required>
+
+        <label for="shop-number">Phone Number:</label>
+        <input type="text" id="shop-number" required>
+
+        <!-- New image input -->
+        <label for="shop-image">Hostel/Room Image:</label>
+        <input type="file" id="shop-image" accept="image/*" required>
+
+        <!-- Preview the selected image -->
+        <img id="image-preview" src="" alt="Image Preview" style="display:none; max-width: 200px; margin: 10px 0;">
+
+        <button type="submit">Add Hostel/Room</button>
+    </form>
+
+    <!-- Section where listed shops will appear -->
+    <h2>Listed Hostels/Room</h2>
+    <ul id="shop-list">
+        <!-- Listed shops will be inserted here -->
+    </ul>
+
+    <script src="firstholist.js"></script>
+</body>
+</html>

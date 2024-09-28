@@ -1,0 +1,927 @@
+body{
+  margin:0px;
+  padding:0px;
+  font-family:  sans-serif;
+  background-color: rgb(231, 237, 249);
+  
+}
+#Navbar {
+  background-color: rgb(254, 251, 254);
+  color: black;
+  height: 70px;
+  display: flex;
+  align-items: center;  
+  margin: 20px 210px; /* Space on the left and right */
+  border-radius: 25px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Floating shadow effect */
+  padding: 0 20px;
+  max-width: 1200px; /* Maximum width of the navbar */
+ position: fixed;
+ z-index: 5;
+}
+
+#Navbar img {
+  height: 65px;
+
+}
+
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500; 
+  font-style: normal;
+  color: #707172;
+  font-size: 25px;
+ margin-right: 300px;
+}
+
+.login-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #f44804;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+margin-right: 10px;
+}
+
+.login-button:hover {
+  background-color: #f44804;
+}
+
+.signin-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #f44804; /* Blue font color */
+  background-color: transparent; /* No background color */
+  border: 2px solid #f44804; /* Blue border */
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+ 
+}
+
+.signin-button:hover {
+  background-color: #e9edee; /* Change background on hover */
+  /* color: white;  Change text color on hover  */
+}
+h4 {
+  margin: 0;
+  padding-left: 10px;
+}
+
+#droppp{
+  margin-right: 150px;
+  
+}
+/* Dropdown Button Styling */
+.dropbtn {
+  background-color:white;  /* Same as parent background for seamless look */
+  color: #333;
+  font-size: 18px;  /* Slightly smaller for a compact look */
+  padding: 8px 12px;  /* Reduced padding */
+  cursor: pointer;
+  border: none;  /* No border to avoid visible edges */
+  border-radius: 4px;
+  box-shadow: none;  /* Remove box shadow to keep it flat */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  line-height: 1.2;
+}
+
+.dropbtn:hover {
+  background-color: rgb(224, 215, 215);  /* Hover effect for button */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);  /* Minimal shadow on hover */
+}
+
+/* Dropdown Content Styling */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 220px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+  padding: 8px 0;  /* Adjusted padding */
+  z-index: 1;
+  border-radius: 6px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Dropdown Item Styling */
+.dropdown-content a {
+  color: black;
+  padding: 6px 14px;
+  text-decoration: none;
+  display: block;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-content a:hover {
+  background-color: #f5f5f5;
+}
+
+.all-locations {
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dropdown-title {
+  font-weight: bold;
+  color: #2b2a2a;
+  padding: 10px 16px;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 5px;
+}
+
+/* For Chevron Animation */
+.dropbtn i {
+  margin-left: 8px;
+  transition: transform 0.3s ease;
+}
+
+.dropdown:hover .dropbtn i {
+  transform: rotate(180deg);  /* Chevron rotation animation */
+}
+
+
+.scrolling-container {
+  overflow: hidden; /* Hides the overflow to keep the animation smooth */
+  background-color:  rgb(231, 237, 249); /* Background color for better visibility */
+  padding: 10px 0;
+  position: relative; /* Ensure positioning context for animation */
+  margin-top: 20px;
+}
+
+.scrolling-content {
+  display: flex; /* Align items in a row */
+  width: 200%; /* Ensures that the content is twice as wide as the container */
+  animation: scroll 15s linear infinite; /* Adjust duration and animation type */
+}
+
+.scrolling-heading {
+  white-space: nowrap; /* Ensures that the text does not wrap */
+  font-size: 24px; /* Font size for the heading */
+  padding-right: 50px; /* Add some space between the duplicated headings */
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0); /* Start from the right edge of the container */
+  }
+  100% {
+    transform: translateX(-50%); /* Move to the left edge, which is 50% of the container’s width */
+  }
+}
+ 
+
+.hero-image {
+  position: relative;
+  height: 80vh; /* Full viewport height */
+  background-size: cover; /* Cover the entire element */
+  background-position: center; /* Center the image */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-image h1
+{
+  font-size: 48px;
+  color: rgb(33, 56, 86);
+  font-weight: 700;
+  margin-left: 70px;
+}
+.hero-image p{
+  font-size: 24px;
+  color: rgb(86, 111, 143);
+  font-weight: 400;
+}
+.help
+{
+  color: #f44804;
+}
+
+#houses {
+  height: auto; /* Let the content determine the height */
+  background-color: rgb(231, 237, 249);
+  padding: 20px;
+  display: flex;
+  margin-top: 30px;
+}
+
+
+/* Flex container to align the image and text side by side */
+#houses1 img {
+  height: 450px;
+  width: 400px; /* Include units for width */
+  border-radius: 2%;
+  /* margin-right: 80px; Space between image and text */
+}
+
+/* Flex container to align the GIF and text side by side */
+.content-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Space between GIF and text */
+}
+
+/* Styling for the text content */
+.text-content {
+  color: black;
+  margin-left: 280px; /* Add spacing between GIF and text */
+  width: 40%; /* Adjust the width of the text area */
+  margin-top: 80px;
+  background-color: #f8fbfb;
+  border-radius: 15px;
+}
+
+.text-content h2 {
+  font-size: 20px;
+  margin-bottom: 10px; 
+  color: #5F6368;
+  font-weight: 600;
+  margin-left: 10px;
+}
+.share{
+  font-size: 20px;
+  margin-bottom: 10px;
+  color:#f44804;
+  font-weight: 600;
+  margin-left: 10px;
+}
+.text-content p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #5F6368;
+  margin-left: 10px;
+}
+
+#pdimg {
+  height: 450px;
+  width: 400; /* Example value, change as needed */
+  border-radius: 2%;
+  margin-left: 150px;
+  display: flex;
+}
+
+#houses2 {
+  height: auto; /* Let the content determine the height */
+  background-color: #f44804;
+  padding: 20px;
+  display: flex;
+  margin-top: 30px;
+  align-items: center; /* Center items vertically */
+}
+
+
+.my-player{
+  margin-left: 100px;
+  border-radius: 20px;
+  
+}
+
+.my-player2{
+  margin-left: 150px;
+  border-radius: 20px;
+  
+}
+.text1-content {
+  color: black;
+  width: 700px;
+  height: 550px; /* Adjust the width of the text area */
+  margin-left: 150px;
+  background-color: #e9edee;
+  margin-right: 300px;
+  border-radius: 15px;
+  font-size: 20px;
+
+}
+
+.text1-content h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #5F6368;
+  font-weight: 600;
+  margin-left: 30px;
+  margin-top: 80px; 
+}
+
+#pdimg2 {
+  height: 450px;
+  width: 400; /* Example value, change as needed */
+  border-radius: 2%;
+  /* margin-right: 150px; */
+  display: flex;
+}
+.text1-content p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #5F6368;
+  margin-left: 30px;
+}
+
+/* Wrapper for the testimonials */
+.testimonial-wrapper {
+  position: relative;
+  width: 100%;
+  height: 550px;
+  overflow: hidden;
+  background-color: #f44804;
+}
+
+/* Testimonial track to hold all testimonials */
+.testimonial-track {
+  display: flex;
+  width: max-content;
+  animation: slideLeft 20s linear infinite;
+  animation-play-state: running;  /* Animation starts in running state */
+
+}
+
+.testimonial {
+  width: 600px; /* Set fixed width */
+  height: 350px; /* Set fixed height */
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Arrange items vertically */
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  background-color: #f3f3f3; /* Background color */
+  border-radius: 20px; /* Curved edges */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  padding: 15px; /* Add some padding */
+  margin: 10px; /* Margin between testimonials */
+  overflow: hidden; /* Prevent overflow */
+}
+
+/* Testimonial text styling */
+.testimonial-text {
+  flex: 1;
+  text-align: left;
+  max-width: 600px; /* Set a max width for the review */
+  margin: 20px auto; /* Center the review block */
+  padding: 15px; /* Add some padding */
+  background-color: #f3f3f3; /* Light background for contrast */
+  border-radius: 8px; /* Rounded corners */
+  line-height: 1.5; /* Adjust line height for readability */
+  overflow-wrap: break-word; /* Ensures long words wrap */
+}
+
+/* Testimonial image styling */
+.testimonial-image img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-left: 20px;
+}
+
+/* Keyframes for infinite sliding */
+@keyframes slideLeft {
+  0% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(-100%);
+  }
+}
+
+/* Pause the animation when hovering over the track */
+.testimonial-track:hover {
+  animation-play-state: paused;
+}
+
+#test{
+  font-size: 48px;
+  color: rgb(249, 249, 249);
+  font-weight: 700;
+margin-left: 40%;
+}
+
+body{
+  margin:0px;
+  padding:0px;
+  font-family:  sans-serif;
+  background-color: rgb(231, 237, 249);
+  
+}
+#Navbar {
+  background-color: rgb(254, 251, 254);
+  color: black;
+  height: 70px;
+  display: flex;
+  align-items: center;  
+  margin: 20px 210px; /* Space on the left and right */
+  border-radius: 25px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Floating shadow effect */
+  padding: 0 20px;
+  max-width: 1200px; /* Maximum width of the navbar */
+ position: fixed;
+ z-index: 5;
+}
+
+#Navbar img {
+  height: 65px;
+
+}
+
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500; 
+  font-style: normal;
+  color: #707172;
+  font-size: 25px;
+ margin-right: 300px;
+}
+
+.login-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #f44804;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+margin-right: 10px;
+}
+
+.login-button:hover {
+  background-color: #f44804;
+}
+
+.signin-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #f44804; /* Blue font color */
+  background-color: transparent; /* No background color */
+  border: 2px solid #f44804; /* Blue border */
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+ 
+}
+
+.signin-button:hover {
+  background-color: #e9edee; /* Change background on hover */
+  /* color: white;  Change text color on hover  */
+}
+
+.button {
+  display: flex;
+  padding: 10px 20px;
+  background-color: #faf8f7; /* Green background */
+  color: #fd5b04; /* White text */
+  text-decoration: none; /* Remove underline */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 16px;
+  transition: background-color 0.3s; /* Smooth background color transition */
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 140px;
+}
+
+
+.button1 {
+  display: flex;
+  padding: 10px 20px;
+  background-color: #fd5b04; /* Green background */
+  color: #fcfbfa; /* White text */
+  text-decoration: none; /* Remove underline */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 16px;
+  transition: background-color 0.3s; /* Smooth background color transition */
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 140px;
+}
+h4 {
+  margin: 0;
+  padding-left: 10px;
+}
+
+#droppp{
+  margin-right: 150px;
+  
+}
+/* Dropdown Button Styling */
+.dropbtn {
+  background-color:white;  /* Same as parent background for seamless look */
+  color: #333;
+  font-size: 18px;  /* Slightly smaller for a compact look */
+  padding: 8px 12px;  /* Reduced padding */
+  cursor: pointer;
+  border: none;  /* No border to avoid visible edges */
+  border-radius: 4px;
+  box-shadow: none;  /* Remove box shadow to keep it flat */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  line-height: 1.2;
+}
+
+.dropbtn:hover {
+  background-color: rgb(224, 215, 215);  /* Hover effect for button */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);  /* Minimal shadow on hover */
+}
+
+/* Dropdown Content Styling */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 220px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+  padding: 8px 0;  /* Adjusted padding */
+  z-index: 1;
+  border-radius: 6px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Dropdown Item Styling */
+.dropdown-content a {
+  color: black;
+  padding: 6px 14px;
+  text-decoration: none;
+  display: block;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-content a:hover {
+  background-color: #f5f5f5;
+}
+
+.all-locations {
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dropdown-title {
+  font-weight: bold;
+  color: #2b2a2a;
+  padding: 10px 16px;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 5px;
+}
+
+/* For Chevron Animation */
+.dropbtn i {
+  margin-left: 8px;
+  transition: transform 0.3s ease;
+}
+
+.dropdown:hover .dropbtn i {
+  transform: rotate(180deg);  /* Chevron rotation animation */
+}
+
+.hero-image {
+  position: relative;
+  height: 80vh; /* Full viewport height */
+  background-size: cover; /* Cover the entire element */
+  background-position: center; /* Center the image */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-image h1
+{
+  font-size: 48px;
+  color: rgb(33, 56, 86);
+  font-weight: 700;
+  margin-left: 70px;
+}
+.hero-image p{
+  font-size: 24px;
+  color: rgb(86, 111, 143);
+  font-weight: 400;
+}
+.help
+{
+  color: #f44804;
+}
+
+.my-player{
+  margin-left: 100px;
+  border-radius: 20px;
+  
+}
+
+.scrolling-container {
+  overflow: hidden; /* Hides the overflow to keep the animation smooth */
+  background-color: rgb(231, 237, 249); /* Background color for better visibility */
+  /* padding: 10px 0; */
+  position: relative; /* Ensure positioning context for animation */
+  margin-top: 20px;
+}
+
+.scrolling-content {
+  display: flex; /* Align items in a row */
+  width: 200%; /* Ensures that the content is twice as wide as the container */
+  animation: scroll 15s linear infinite; /* Adjust duration and animation type */
+}
+
+.scrolling-heading {
+  white-space: nowrap; /* Ensures that the text does not wrap */
+  font-size: 24px; /* Font size for the heading */
+  padding-right: 50px; /* Add some space between the duplicated headings */
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0); /* Start from the right edge of the container */
+  }
+  100% {
+    transform: translateX(-50%); /* Move to the left edge, which is 50% of the container’s width */
+  }
+}
+
+
+#houses {
+  height: auto; /* Let the content determine the height */
+  background-color: rgb(231, 237, 249);
+  padding: 20px;
+  display: flex;
+  margin-top: 30px;
+  width: 100%;
+}
+
+/* Flex container to align the GIF and text side by side */
+.content-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Space between GIF and text */
+}
+
+/* Styling for the text content */
+.text-content {
+  color: rgb(244, 240, 240);
+  margin-left: 280px; /* Add spacing between GIF and text */
+  width: 40%; /* Adjust the width of the text area */
+  margin-top: 50px;
+  height: 400px;
+  background-color: rgb(253, 82, 3);
+
+}
+
+.text-content h2 {
+  font-size: 20px;
+  margin-bottom: 10px; 
+  color: #fafbfc;
+  font-weight: 600;
+}
+.share{
+  font-size: 20px;
+  margin-bottom: 10px;
+  color:#f6f3f2;
+  font-weight: 600;
+  margin-left: 10px;
+}
+
+.sharee{
+  font-size: 20px;
+  margin-bottom: 10px;
+  color:#6e6d6c;
+  font-weight: 600;
+  margin-left: 30px;
+}
+.text-content p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #fafbfe;
+}
+
+#pdimg {
+  height: 450px;
+  width: 400; /* Example value, change as needed */
+  border-radius: 2%;
+  margin-left: 150px;
+  display: flex;
+}
+
+#houses2 {
+  height: auto; /* Let the content determine the height */
+  background-color: #f44804;
+  padding: 20px;
+  display: flex;
+  margin-top: 30px;
+  align-items: center; /* Center items vertically */
+  width: 100%;
+}
+
+/* Flex container to align the image and text side by side */
+#houses1 img {
+  height: 450px;
+  width: 400px; /* Include units for width */
+  border-radius: 2%;
+  /* margin-right: 80px; Space between image and text */
+}
+
+.text1-content {
+  color: black;
+  width: 700px;
+  height: 550px; /* Adjust the width of the text area */
+  margin-left: 150px;
+  background-color: #e9edee;
+  margin-right: 300px;
+  border-radius: 15px;
+  font-size: 20px;
+
+}
+
+.text1-content h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #5F6368;
+  font-weight: 600;
+  margin-left: 30px;
+  margin-top: 80px; 
+}
+
+#pdimg2 {
+  height: 450px;
+  width: 400; /* Example value, change as needed */
+  border-radius: 2%;
+  /* margin-right: 150px; */
+  display: flex;
+}
+.text1-content p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #5F6368;
+  margin-left: 30px;
+}
+
+
+/* Wrapper for the testimonials */
+.testimonial-wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background-color: #f44804;
+  height:650px;
+
+}
+
+/* Testimonial track to hold all testimonials */
+.testimonial-track {
+  display: flex;
+  width: max-content;
+  animation: slideLeft 20s linear infinite;
+  animation-play-state: running;  /* Animation starts in running state */
+}
+.testimonial {
+  width: 600px; /* Set fixed width */
+  height: 400px; /* Set fixed height */
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Arrange items vertically */
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  background-color: #f3f3f3; /* Background color */
+  border-radius: 20px; /* Curved edges */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  padding: 15px; /* Add some padding */
+  margin: 10px; /* Margin between testimonials */
+  overflow: hidden; /* Prevent overflow */
+}
+.testimonial-h1{
+  font-size: 20px;
+  color: #e03d03;
+}
+/* Testimonial text styling */
+.testimonial-text {
+  flex: 1;
+  text-align: left;
+  max-width: 600px; /* Set a max width for the review */
+  margin: 20px auto; /* Center the review block */
+  padding: 15px; /* Add some padding */
+  background-color: #f3f3f3; /* Light background for contrast */
+  border-radius: 8px; /* Rounded corners */
+  line-height: 1.5; /* Adjust line height for readability */
+  overflow-wrap: break-word; /* Ensures long words wrap */
+}
+
+/* Testimonial image styling */
+.testimonial-image img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-left: 20px;
+}
+
+/* Testimonial text styling */
+.testimonial-text {
+  flex: 1;
+  text-align: left;
+  max-width: 600px; /* Set a max width for the review */
+  margin: 20px auto; /* Center the review block */
+  padding: 15px; /* Add some padding */
+  background-color: #f3f3f3; /* Light background for contrast */
+  border-radius: 8px; /* Rounded corners */
+  line-height: 1.5; /* Adjust line height for readability */
+  overflow-wrap: break-word; /* Ensures long words wrap */
+  color: #f44804;
+}
+
+/* Testimonial image styling */
+.testimonial-image img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-left: 20px;
+}
+
+/* Keyframes for infinite sliding */
+@keyframes slideLeft {
+  0% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(-100%);
+  }
+}
+
+/* Pause the animation when hovering over the track */
+.testimonial-track:hover {
+  animation-play-state: paused;
+}
+
+#test{
+  font-size: 48px;
+  color: rgb(249, 249, 249);
+  font-weight: 700;
+margin-left: 40%;
+}
+footer {
+    background-color: #f9f6f5;
+    padding: 20px;
+    color: #343a40;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-info, .footer-contacts, .footer-services {
+    width: 30%;
+   
+  }
+  
+  .footer-info h3, .footer-contacts h3, .footer-services h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #fe0808;
+  }
+  
+  .footer-info p, .footer-contacts ul, .footer-services ul {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  .footer-contacts ul, .footer-services ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-contacts ul li, .footer-services ul li {
+    margin-bottom: 8px;
+  }
+  
+  .footer-contacts a, .footer-services a {
+    color: #ff4800;
+    text-decoration: none;
+  }
+  
+  .footer-contacts a:hover, .footer-services a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    padding: 10px;
+    background-color: #e9ecef;
+    margin-top: 20px;
+    color: #f44804;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  

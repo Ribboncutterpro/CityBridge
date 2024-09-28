@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Your Product</title>
+    <link rel="stylesheet" href="stylefurlist.css">
+</head>
+<body>
+
+    <h1>List Your Product for Sale</h1>
+
+    <!-- Form to input product details -->
+    <form id="product-form">
+        <label for="product-name">Product Name:</label>
+        <input type="text" id="product-name" required>
+
+        <label for="product-description">Description:</label>
+        <input type="text" id="product-description" required>
+
+        <label for="product-price">Price:</label>
+        <input type="number" id="product-price" required>
+
+        <label for="person-name">Your Name:</label>
+        <input type="text" id="person-name" required>
+
+        <label for="person-number">Your Phone Number:</label>
+        <input type="text" id="person-number" required>
+
+        <!-- New image input -->
+        <label for="product-image">Product Image:</label>
+        <input type="file" id="product-image" accept="image/*" required>
+
+        <!-- Preview the selected image -->
+        <img id="image-preview" src="" alt="Image Preview" style="display:none; max-width: 200px; margin: 10px 0;">
+
+        <button type="submit">Add Product</button>
+    </form>
+
+    <!-- Section where listed products will appear -->
+    <h2>Listed Products</h2>
+    <ul id="product-list">
+        <!-- Listed products will be inserted here -->
+    </ul>
+
+    <script src="firstfurlist.js"></script>
+</body>
+</html>

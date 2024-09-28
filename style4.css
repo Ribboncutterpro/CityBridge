@@ -1,0 +1,491 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+
+.Navbar {
+    color: black;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    background-color:white;
+    padding: 0 20px; /* Add padding for spacing */
+    position:sticky;
+    top: 0%;
+    z-index: 6;
+    width:100%;
+  }
+  
+  .Navbar img{
+
+    height: 65px;
+  }
+  .Navbar h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    color: rgb(58, 6, 248);
+
+  }
+  .Navbar h2{
+    color:rgb(135, 134, 134);
+    margin-left: 140px;
+    font-weight: 400;
+    margin-top: 25px;
+    font-family: sans-serif;
+   font-size: 18px;
+  }
+  #listing
+  {
+    color:rgb(135, 134, 134);
+    margin-left: 180px;
+    font-weight: 400;
+    margin-top: 25px;
+    font-family: sans-serif;
+    font-size: 18px;
+  }
+  .search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px; /* Adjust as needed */
+    margin-left: 220px;
+  }
+  
+  .search-input {
+    width: 800px;
+    padding: 10px 20px;
+    border: 2px solid #ccc;
+    border-radius: 50px;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease;
+  }
+  
+  .search-input:focus {
+    border-color: #007BFF;
+  }
+  
+  .search-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-left: -50px;
+    color: rgb(19, 133, 233);
+    
+  }
+  
+  .search-btn i {
+    font-size: 20px; /* Adjust size as needed */
+    color:black; /* Adjust color if needed */
+  }
+  .button {
+    display: flex;
+    padding: 10px 20px;
+    background-color: #ff5c04; /* Green background */
+    color: white; /* White text */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px;
+    transition: background-color 0.3s; /* Smooth background color transition */
+    margin-top: 10px;
+    margin-left: 140px;
+  }
+
+
+.slider-container {
+    position: relative;
+    width: 90%;
+    height: 400px;
+    overflow: hidden;
+    margin-left: 70px;
+    margin-top: 40px;
+    border-radius: 15px;
+}
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+    display: flex;
+    flex-direction: row;
+}
+.slide.active {
+    opacity: 1;
+}
+.slide-content {
+    background-color: #ff4136;
+    color: white;
+    padding: 1rem;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.slide-image-container {
+    width: 50%;
+    overflow: hidden;
+}
+.slide-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.slide-title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    margin-left: 35px;
+}
+.slide-description {
+    /* margin-bottom: 1rem;
+    justify-content: left; */
+  margin: 0; /* Removes all margins */
+    padding: 0; /* Ensures no padding is applied */
+    text-align: left; /* Optional, in case alignment is needed */
+    margin-left: 40px;
+    font-size: 18px;
+}
+
+.shop-now-btn {
+    background-color: white;
+    color: #ff4136;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    align-self: flex-start;
+}
+.prev-btn, .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    cursor: pointer;
+
+}
+.prev-btn {
+    left: 1rem;
+    display: flex;
+    border-radius: 50%;
+}
+.next-btn {
+    right: 1rem;
+    display: flex;
+    border-radius: 50%;
+}
+.slider-indicators {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 0.5rem;
+}
+.indicator {
+    width: 0.75rem;
+    height: 0.75rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+}
+.indicator.active {
+    background-color: white;
+}
+@media (max-width: 768px) {
+    .slide {
+        flex-direction: column;
+    }
+    .slide-content, .slide-image-container {
+        width: 100%;
+    }
+    .slide-content {
+        height: 50%;
+    }
+    .slide-image-container {
+        height: 50%;
+    }
+}
+
+  #cities {
+    display: flex;
+    justify-content: space-between;
+    background-color: #F3F5F7;  /* Light grey background */
+    padding: 5px 15px;  /* Slight padding reduction for compact look */
+    border-radius: 6px;
+    gap: 10px; /* Add some gap between buttons to prevent overlap */
+    position: relative;
+  }
+  
+  /* Dropdown Button Styling */
+  .dropbtn {
+    background-color: #F3F5F7;  /* Same as parent background for seamless look */
+    color: #333;
+    font-size: 14px;  /* Slightly smaller for a compact look */
+    padding: 8px 12px;  /* Reduced padding */
+    cursor: pointer;
+    border: none;  /* No border to avoid visible edges */
+    border-radius: 4px;
+    box-shadow: none;  /* Remove box shadow to keep it flat */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    line-height: 1.2;
+  }
+  
+  .dropbtn:hover {
+    background-color: white;  /* Hover effect for button */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);  /* Minimal shadow on hover */
+  }
+  
+  /* Dropdown Content Styling */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 220px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 8px 0;  /* Adjusted padding */
+    z-index: 1;
+    border-radius: 6px;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Dropdown Item Styling */
+  .dropdown-content a {
+    color: black;
+    padding: 6px 14px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #f5f5f5;
+  }
+  
+  .all-locations {
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .dropdown-title {
+    font-weight: bold;
+    color: #2b2a2a;
+    padding: 10px 16px;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 5px;
+  }
+  
+  /* For Chevron Animation */
+  .dropbtn i {
+    margin-left: 8px;
+    transition: transform 0.3s ease;
+  }
+  
+  .dropdown:hover .dropbtn i {
+    transform: rotate(180deg);  /* Chevron rotation animation */
+  }
+  
+  
+#Satna{
+  font-size: 40px;
+  margin-bottom: 10px;
+  color: #5F6368;
+  font-weight: 500;
+  /* margin-left: 580px; */
+  margin-top: 60px;
+  text-align: center;
+
+} 
+
+.features-container {
+  display: flex;
+  justify-content: space-between; /* Spacing between the icons */
+  align-items: center;
+  padding: 20px;
+  overflow-x: auto; /* Allows horizontal scrolling if necessary */
+  gap: 10px;
+}
+
+.feature-item {
+  display: flex;
+  flex-direction: column; /* Stack icon and text vertically */
+  align-items: center; /* Center align the icon and text */
+ 
+  padding: 10px;
+  border-radius: 8px;
+  margin-right: 20px; /* Space between each feature */
+  width: 150px; /* Set width to maintain uniform size */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-item:hover {
+  transform: scale(1.05); /* Slightly enlarge the div on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+.feature-icon {
+  font-size: 60px; /* Set size for the icon font */
+  margin-bottom: 10px; /* Space between icon and text */
+  color: #333; /* Set icon color */
+}
+
+
+p {
+  text-align: center; /* Center align the text */
+  margin: 0;
+  font-family: 'Playpen Sans', sans-serif;
+  margin-top: 15px;
+}
+
+.features-container::-webkit-scrollbar {
+  height: 8px; /* Custom scrollbar for horizontal scrolling */
+}
+
+.features-container::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 4px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Four columns */
+  grid-gap: 20px; /* Space between grid items */
+  padding: 20px; /* Padding around the grid */
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column; /* Stack image and text vertically */
+  align-items: center; /* Center align items */
+  border-radius: 8px;
+  padding: 10px;
+  /* background-color: #f9f9f9; */
+}
+
+.grid-item img {
+  max-width: 100%; /* Ensure image fits within the grid item */
+  border-radius: 8px;
+}
+#desk{
+  height: 240px;
+  width: 300px;
+}
+#mirror{
+  height: 380px;
+  width: 300px;
+}
+.grid-item p {
+  margin-top: 20px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 20px;
+}
+
+.item {
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+}
+.item img {
+  width: 50%; 
+  height: auto;
+  border-radius: 2%;
+}
+
+.details {
+  padding: 15px;
+}
+
+.details h2 {
+  margin: 0;
+  font-size: 1.5em;
+  
+}
+
+.details p {
+  margin: 0;
+  color: #666;
+}
+
+  
+footer {
+  background-color: #f8f9fa;
+  padding: 20px;
+  color: #343a40;
+  margin-top: 20px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-info, .footer-contacts, .footer-services {
+  width: 30%;
+}
+
+.footer-info h3, .footer-contacts h3, .footer-services h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footer-info p, .footer-contacts ul, .footer-services ul {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer-contacts ul, .footer-services ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-contacts ul li, .footer-services ul li {
+  margin-bottom: 8px;
+}
+
+.footer-contacts a, .footer-services a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.footer-contacts a:hover, .footer-services a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 10px;
+  background-color: #e9ecef;
+  margin-top: 20px;
+} 

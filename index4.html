@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+    <link rel="stylesheet" href="style4.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+   
+</head>
+<body>
+
+    
+ <div class="Navbar">
+    <img src="logo.png">
+<h1>Furnitures</h1>
+<div class="search-container">
+    <input type="text"id="myinput" placeholder="Search... " class="search-input"onkeyup="searchFun()">
+    <button class="search-btn">
+        <i class="fa-solid fa-magnifying-glass"></i>
+    </button>
+</div>
+<!-- <i class="fa-solid fa-check"></i> -->
+<a href="indexfurlist.html" class="button">List Your product</a>
+ </div>
+ 
+ <div id="cities">
+    <div class="dropdown">
+        <button class="dropbtn">Bangalore <i class="fas fa-chevron-down"></i></button>
+        <div class="dropdown-content">
+            <span class="dropdown-title">Popular Localities</span>
+            <a href="#">Whitefield</a>
+            <a href="#">Koramangala</a>
+            <a href="#">MG Road</a>
+            <a href="#">Indiranagar</a>
+            <a href="#">Electronic City</a>
+            <a href="#" class="all-locations">All of Bangalore <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <button class="dropbtn">Mumbai <i class="fas fa-chevron-down"></i></button>
+        <div class="dropdown-content">
+            <span class="dropdown-title">Popular Localities</span>
+            <a href="#">Bandra</a>
+            <a href="#">Juhu</a>
+            <a href="#">Andheri</a>
+            <a href="#">Colaba</a>
+            <a href="#">Borivali</a>
+            <a href="#" class="all-locations">All of Mumbai <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <button class="dropbtn">Delhi <i class="fas fa-chevron-down"></i></button>
+        <div class="dropdown-content">
+            <span class="dropdown-title">Popular Localities</span>
+            <a href="#">Paharganj</a>
+            <a href="#">Karol Bagh</a>
+            <a href="#">Janakpuri</a>
+            <a href="#">Dwarka</a>
+            <a href="#">Rohini</a>
+            <a href="#" class="all-locations">All of Delhi <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </div>
+
+    <!-- New cities added below -->
+
+    <div class="dropdown">
+        <button class="dropbtn">Ahmedabad <i class="fas fa-chevron-down"></i></button>
+        <div class="dropdown-content">
+            <span class="dropdown-title">Popular Localities</span>
+            <a href="#">Navrangpura</a>
+            <a href="#">Satellite</a>
+            <a href="#">Bopal</a>
+            <a href="#">Gandhinagar</a>
+            <a href="#" class="all-locations">All of Ahmedabad <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <button class="dropbtn">Chandigarh <i class="fas fa-chevron-down"></i></button>
+        <div class="dropdown-content">
+            <span class="dropdown-title">Popular Localities</span>
+            <a href="#">Sector 17</a>
+            <a href="#">Sector 22</a>
+            <a href="#">Panchkula</a>
+            <a href="#">Mohali</a>
+            <a href="#" class="all-locations">All of Chandigarh <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <button class="dropbtn">Jaipur <i class="fas fa-chevron-down"></i></button>
+        <div class="dropdown-content">
+            <span class="dropdown-title">Popular Localities</span>
+            <a href="#">Malviya Nagar</a>
+            <a href="#">Vaishali Nagar</a>
+            <a href="#">C-Scheme</a>
+            <a href="#">Bapu Nagar</a>
+            <a href="#" class="all-locations">All of Jaipur <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <button class="dropbtn">Lucknow <i class="fas fa-chevron-down"></i></button>
+        <div class="dropdown-content">
+            <span class="dropdown-title">Popular Localities</span>
+            <a href="#">Hazratganj</a>
+            <a href="#">Gomti Nagar</a>
+            <a href="#">Alambagh</a>
+            <a href="#">Indira Nagar</a>
+            <a href="#" class="all-locations">All of Lucknow <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <button class="dropbtn">Kochi <i class="fas fa-chevron-down"></i></button>
+        <div class="dropdown-content">
+            <span class="dropdown-title">Popular Localities</span>
+            <a href="#">Fort Kochi</a>
+            <a href="#">Kakkanad</a>
+            <a href="#">Edappally</a>
+            <a href="#">Aluva</a>
+            <a href="#" class="all-locations">All of Kochi <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="slider-container">
+    <div class="slide active">
+        <div class="slide-content">
+            <h2 class="slide-title">Want to Buy Offline </h2>
+            <p class="slide-description">Search in Your Nearby</p>
+            <!-- <button class="shop-now-btn">Shop now</button> -->
+        </div>
+        <div class="slide-image-container">
+            <img src="imageS1.jpg" alt="Summer collection" class="slide-image">
+        </div>
+    </div>
+    <div class="slide">
+        <div class="slide-content">
+            <h2 class="slide-title">On a budget</h2>
+            <p class="slide-description">We allow you to chose whatever you want</p>
+            <!-- <button class="shop-now-btn">Shop now</button> -->
+        </div>
+        <div class="slide-image-container">
+            <img src="imageS2.jpg" alt="Beach fashion" class="slide-image">
+        </div>
+    </div>
+    <div class="slide">
+        <div class="slide-content">
+            <h2 class="slide-title">Worried about the Quality</h2>
+            <p class="slide-description">Go to the Seller and see yourself</p>
+            <!-- <button class="shop-now-btn">Shop now</button> -->
+        </div>
+        <div class="slide-image-container">
+            <img src="imageS3.jpg" alt="Summer accessories" class="slide-image">
+        </div>
+    </div>
+    <button class="prev-btn">&lt;</button>
+    <button class="next-btn">&gt;</button>
+    <div class="slider-indicators"></div>
+</div>
+    <script src="first4.js"></script>
+
+    <h2 id="Satna">Our features  </h2>
+    <div class="features-container">
+        <div class="feature-item">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <p>Search Products Near You</p>
+        </div>
+        <div class="feature-item">
+            <i class="fa-solid fa-handshake"></i>
+            <p>Connect Direct To Seller</p>
+        </div>
+        <div class="feature-item">
+            <i class="fa-solid fa-shield"></i>
+            <p>Trusted By Many people</p>
+        </div>
+        <div class="feature-item">
+            <i class="fa-solid fa-user"></i>
+            <p>Thousand's of Users</p>
+        </div>
+        <div class="feature-item">
+            <i class="fa-solid fa-wallet"></i>
+            <p>Cost Efficient for Many</p>
+        </div>
+        <div class="feature-item">
+            <i class="fa-solid fa-heart"></i>
+            <p>Loved specially by students</p>
+        </div>
+    </div>
+    <h2 id="Satna">Popular Categories  </h2>
+    
+        <div class="grid-container">
+            <div class="grid-item">
+                <img src="sofa.jpeg" alt="Image 1">
+                <p>Living Room Furniture</p>
+            </div>
+            <div class="grid-item">
+                <img src="bed.jpeg" alt="Image 2">
+                <p>Bedroom Furniture</p>
+            </div>
+            <div class="grid-item">
+                <img src="chair.png" alt="Image 3">
+                <p>Dining Room Furniture</p>
+            </div>
+            <div class="grid-item">
+                <img  id="desk"src="desk.jpeg" alt="Image 4">
+                <p>Office Furniture</p>
+            </div>
+            <div class="grid-item">
+                <img src="garden chair.jpeg" alt="Image 5">
+                <p>Outdoor Furniture</p>
+            </div>
+            <div class="grid-item">
+                <img src="shelves.jpeg" alt="Image 6">
+                <p>Storage Furniture</p>
+            </div>
+            <div class="grid-item">
+                <img src="gaming chair.jpeg" alt="Image 7">
+                <p>Specialty Furniture</p>
+            </div>
+            <div class="grid-item">
+                <img id="mirror" src="mirror.png" alt="Image 8">
+                <p>Accent Furniture</p>
+            </div>
+        </div>
+
+        <h2 id="Satna">Products From your Nearby  </h2>
+    <div class="container">
+        <div class="grid">
+          <div class="item">
+            <img src="bedfurn.jpeg" alt="Picture 1">
+            <div class="details">
+              <h2>Ram Kumar</h2>
+              <h3>9661288016</h3>
+              <p>Circuit House </p>
+            </div>
+          </div>
+          <div class="item">
+            <img src="livingfurn.jpeg" alt="Picture 2">
+            <div class="details">
+             <h2>Shyam </h2>
+             <h3>9661288016</h3>
+              <p>Pateri</p>
+            </div>
+          </div>
+          <div class="item">
+            <img src="diningfurn.jpeg" alt="Picture 3">
+            <div class="details">
+              <h2>Pritam </h2>
+              <h3>9661288016</h3>
+              <p>Civil Line</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    <div class="container">
+        <div class="grid">
+          <div class="item">
+            <img src="officefurn.jpeg" alt="Picture 1">
+            <div class="details">
+              <h2>Raju</h2>
+              <h3>9661288016</h3>
+              <p>Katni</p>
+            </div>
+          </div>
+          <div class="item">
+            <img src="outdoorfurn.jpeg" alt="Picture 2">
+            <div class="details">
+              <h2>Prabhat </h2>
+              <h3>9661288016</h3>
+              <p>Satna</p>
+         
+            </div>
+          </div>
+          <div class="item">
+            <img src="accentfurn.jpeg" alt="Picture 3">
+            <div class="details">
+              <h2>Pramod </h2>
+              <h3>9661288016</h3>
+              <p>Jabalpur</p>
+            
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      
+    <div class="container">
+        <div class="grid">
+          <div class="item">
+            <img src="officefurn2.jpeg" alt="Picture 1">
+            <div class="details">
+              <h2>Prakash </h2>
+              <h3>9661288016</h3>
+              <p>Rewa</p>
+         
+            </div>
+          </div>
+          <div class="item">
+            <img src="outdoorfurn2.jpeg" alt="Picture 2">
+            <div class="details">
+              <h2>Ram Prakash </h2>
+              <h3>9661288016</h3>
+              <p>Chitakoot</p>
+           
+            </div>
+          </div>
+          <div class="item">
+            <img src="garden chair.jpeg" alt="Picture 3">
+            <div class="details">
+              <h2>Pappu </h2>
+              <h3>9661288016</h3>
+              <p>Rampur</p>
+         
+            </div>
+          </div>
+        </div>
+      </div>
+      
+ <footer>
+    <div class="footer-container">
+       
+        <div class="footer-info">
+            <h3>About Us</h3>
+            <p>Welcome to our accommodation platform, where we connect you with top-rated homes, hostels, grocery stores, and furniture suppliers. Enjoy a seamless experience with services tailored to your needs.</p>
+        </div>
+
+       
+        <div class="footer-contacts">
+            <h3>Contact Us</h3>
+            <ul>
+                <li>Email: <a href="mailto:support@example.com">support@example.com</a></li>
+                <li>Phone: <a href="tel:+1234567890">+123-456-7890</a></li>
+                <li>Address: 1234 Accommodation St, City, Country</li>
+            </ul>
+        </div>
+        
+      
+        <div class="footer-services">
+            <h3>Our Services</h3>
+            <ul>
+                <li><a href="#homes">Rental Homes</a></li>
+                <li><a href="#hostels">Top-Rated Hostels</a></li>
+                <li><a href="#groceries">Grocery Stores</a></li>
+                <li><a href="#furniture">Furniture Suppliers</a></li>
+            </ul>
+        </div>
+    </div>
+
+  
+    <div class="footer-bottom">
+        <p>&copy; 2024 Accommodation Platform. All rights reserved.</p>
+    </div>
+</footer>
+</body>
+</html> 
